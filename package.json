@@ -1,0 +1,15 @@
+{
+  "name": "iammoody-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The new iammoody.com marketing site, plus review tools for the old WordPress content.",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node scripts/build-static.js",
+    "check": "node scripts/check-media.js",
+    "preview": "node scripts/preview.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

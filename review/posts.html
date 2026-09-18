@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Old blog posts · Content review</title>
+<link rel="stylesheet" href="/assets/css/review.css"></head>
+<body>
+<div class="topbar"><span class="brand">Content review</span>
+  <a href="/review">Overview</a>
+  <a href="/review/posts" class="on">Old blog posts</a>
+  <a href="/review/media">Media</a>
+  <span class="spacer"></span><a href="/">← View the site</a></div>
+<div class="wrap">
+<h1>Old blog posts</h1>
+<p class="lead">All 646 posts from the old WordPress site. Click a title to preview it, then mark it <b>Archive</b> (leave behind) or <b>Mine for content</b> (reuse the story, facts or photos). Everything saves automatically to <code>site/data/decisions.json</code>.</p>
+<div class="toolbar">
+  <div class="row">
+    <input id="q" type="search" placeholder="Search…" autofocus>
+    <span id="filters" class="row" style="margin:0"></span>
+    <button id="reset" type="button">Reset</button>
+    <span id="flash" role="status"></span>
+  </div>
+  <div class="row">
+    <span id="stats"></span>
+  </div>
+  <div class="progress"><div id="bar"></div></div>
+  <div class="row" style="margin:8px 0 0">
+    <span class="bulk">Set all <b id="bulk-count">0</b> filtered rows to <select id="bulk-status"></select><button id="bulk-apply" type="button">Apply</button></span>
+    <button id="export" type="button">Export CSV (filtered)</button>
+    <label class="bulk">Rows per page <select id="size"><option>25</option><option selected>50</option><option>100</option><option>250</option></select></label>
+  </div>
+</div>
+<div class="pager"></div>
+<div id="table-wrap"><p class="empty">Loading…</p></div>
+<div class="pager"></div>
+<aside id="viewer" hidden></aside>
+</div>
+<script>window.REVIEW = { kind: 'posts' };</script>
+<script src="/assets/js/review.js"></script>
+</body></html>

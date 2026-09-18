@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Overview · Content review</title>
+<link rel="stylesheet" href="/assets/css/review.css"></head>
+<body>
+<div class="topbar"><span class="brand">Content review</span>
+  <a href="/review" class="on">Overview</a>
+  <a href="/review/posts">Old blog posts</a>
+  <a href="/review/media">Media</a>
+  <span class="spacer"></span><a href="/">← View the site</a></div>
+<div class="wrap">
+<h1>Content review</h1>
+<p class="lead">Tools for going through everything pulled from the old iammoody.com, to decide what feeds the new site. Decisions save automatically.</p>
+<div class="cards">
+  <div class="card"><h2>Old blog posts</h2><div class="big" id="n-posts">…</div><p><span id="d-posts"></span></p><p class="muted">Preview each post, mark it Archive or Mine for content, add notes, export to CSV.</p><a class="btn primary" href="/review/posts">Review posts</a></div>
+  <div class="card"><h2>Media</h2><div class="big" id="n-media">…</div><p><span id="d-media"></span></p><p class="muted">Every image and file: dimensions, size, whether it downloaded, and which posts use it.</p><a class="btn primary" href="/review/media">Review media</a></div>
+</div>
+<div class="card"><h2>How it works</h2>
+<ul>
+<li><b>Nothing is deleted.</b> Marking a post “Archive” only records your decision. The full export stays in <code>iammoody-export/</code>.</li>
+<li><b>Shortcuts in the preview panel:</b> ←/→ move between items, <kbd>A</kbd>/<kbd>M</kbd> (posts) or <kbd>U</kbd>/<kbd>D</kbd> (media) set the decision, <kbd>Esc</kbd> closes.</li>
+<li><b>Bulk actions:</b> filter the table, then set every filtered row at once (e.g. archive everything from 2009–2012).</li>
+<li><b>Export:</b> “Export CSV” downloads the filtered rows with your decisions and notes.</li>
+</ul></div>
+</div>
+<script>
+Promise.all([fetch('/api/review/posts').then(r=>r.json()), fetch('/api/review/media').then(r=>r.json()), fetch('/api/decisions').then(r=>r.json())]).then(([p,m,d])=>{
+  const cnt=(o,s)=>Object.values(o||{}).filter(x=>x.status===s).length;
+  document.getElementById('n-posts').textContent=p.rows.length.toLocaleString();
+  document.getElementById('n-media').textContent=m.rows.length.toLocaleString();
+  document.getElementById('d-posts').textContent=`Archive ${cnt(d.posts,'archive')} · Mine ${cnt(d.posts,'mine')} · Unreviewed ${p.rows.length-Object.values(d.posts||{}).filter(x=>x.status).length}`;
+  document.getElementById('d-media').textContent=`Use ${cnt(d.media,'use')} · Discard ${cnt(d.media,'discard')} · Unreviewed ${m.rows.length-Object.values(d.media||{}).filter(x=>x.status).length}`;
+});
+</script>
+</body></html>

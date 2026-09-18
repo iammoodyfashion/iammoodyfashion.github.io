@@ -1,0 +1,289 @@
+{
+  "site": {
+    "name": "IAmMoody",
+    "tagline": "Fashion shows and events, produced in Minneapolis.",
+    "location": "Minneapolis, Minnesota",
+    "email": "richard@iammoody.com",
+    "facebook": "https://www.facebook.com/iammoodyevents/",
+    "instagram": "https://www.instagram.com/rtiammoody/",
+    "heroImage": "2026/09/2026DammelPhoto_MP3AllBlackPromo_7-scaled-1.webp",
+    "richardPortrait": "2022/09/dev2021po_r-moody_005.jpg",
+    "richardPortraitWide": "2022/04/richard_moody_eyebobs0106.jpg",
+    "richardRedCarpet": "2022/07/iammoody_hero_1.jpeg"
+  },
+
+  "stats": [
+    { "value": "33rd", "label": "Annual Holiday Charity Party", "note": "Dec 2024" },
+    { "value": "9th", "label": "Annual All Black Attire Show", "note": "Sept 2026" },
+    { "value": "30+", "label": "Years producing events" },
+    { "value": "700+", "label": "Young models coached at the 4-H Style Revue", "note": "as of 2022" }
+  ],
+
+  "services": [
+    {
+      "slug": "fashion-show-production",
+      "title": "Fashion Show Production",
+      "lead": true,
+      "blurb": "Runway shows for boutiques, designers, brands and charity galas: concept to curtain call.",
+      "image": "2019/10/winter_wellness_2019.jpg",
+      "points": [
+        "Show concept, theme and run-of-show",
+        "Model casting and coordination",
+        "Runway, staging, lighting and set design",
+        "Music, performers and emcee",
+        "Backstage management and stylist coordination",
+        "Venue, permits, guest experience and clean-up"
+      ]
+    },
+    {
+      "slug": "custom-events",
+      "title": "Custom Events",
+      "blurb": "Grand openings, corporate events, fundraisers and parties, planned end to end.",
+      "image": "2024/12/elp-5596.jpg",
+      "points": [
+        "Motif, décor and signage",
+        "Venue reservation and on-site support",
+        "Food, beverage and catering",
+        "Entertainment and speakers",
+        "Staffing, parking / valet, tables and chairs",
+        "Publicity and community outreach to build attendance"
+      ]
+    },
+    {
+      "slug": "brand-activations",
+      "title": "Brand Activations",
+      "blurb": "Promotional marketing that creates buzz and captures customer contact information for follow-up.",
+      "image": "2022/07/iammoody_hero_1.jpeg",
+      "points": [
+        "Convention, trade-show and event spokes-models",
+        "Beverage sampling and tasting, on and off premise",
+        "Mobile marketing programs",
+        "Front-of-house meet-and-greet personnel",
+        "Grassroots branding that builds word of mouth"
+      ]
+    }
+  ],
+
+  "series": [
+    {
+      "slug": "holiday-charity-party",
+      "name": "Richard Moody's Holiday Charity Party",
+      "short": "Holiday Charity Party",
+      "kicker": "33rd annual · December 2024",
+      "tagline": "A December tradition in Minneapolis: bring a gift, give back, celebrate the season.",
+      "image": "2024/12/elp-5734.jpg",
+      "match": "holiday (charity )?party|holiday toy",
+      "story": [
+        "Every December, Richard Moody's Holiday Charity Party brings friends, neighbors, models, business partners and supporters together to raise gifts and donations for Twin Cities children, teens and families.",
+        "Beneficiaries change with the year: the Domestic Abuse Project, Sabathani Community Center and The Link in 2010; WE WIN Institute and The Sanneh Foundation in 2021; The Sanneh Foundation again in 2023; and Sabathani Community Center in 2024, with a teen-focused gift drive and live music from Dave Thompson & Friends, DJ Cousin Christopher and a surprise performance by Esera Tuaolo.",
+        "In 2020 the party became a drive-thru toy and food donation event so the giving could continue."
+      ],
+      "facts": [
+        { "value": "33rd", "label": "annual party (2024)" },
+        { "value": "2020", "label": "moved to a drive-thru donation event" },
+        { "value": "Toys · Gifts · Cash", "label": "all donations go to the featured charity" }
+      ],
+      "gallery": [
+        "2024/12/elp-5734.jpg", "2024/12/elp-5596.jpg", "2024/12/elp-6190.jpg", "2024/12/elp-5592.jpg",
+        "2022/11/Moody_Holiday_Party_2021_54.jpeg", "2022/11/Moody_Holiday_Party_2021_17.jpeg", "2022/11/Moody_Holiday_Party_2021_44.jpeg"
+      ],
+      "sources": ["posts/2024-12-17-richard-moodys-33rd-annual-holiday-charity-party-a-magical-evening-of-giving-back", "posts/2021-12-18-recap-moodys-30th-annual-holiday-party", "posts/2010-12-01-holiday-charity-party-sabathani-community-center"]
+    },
+    {
+      "slug": "all-black-attire-party",
+      "name": "All Black Attire Fashion Show & Party",
+      "short": "All Black Attire Party",
+      "kicker": "9th annual · September 16, 2026",
+      "tagline": "An all-black dress code, a 150-foot red carpet and an alley turned runway in Minneapolis's North Loop.",
+      "image": "2026/09/2026DammelPhoto_MP3AllBlackPromo_7-scaled-1.webp",
+      "match": "all[- ]black attire",
+      "story": [
+        "Presented with luxury boutique MartinPatrick3, the All Black Attire Fashion Show & Party turns the string-lit alley between MartinPatrick3 and the Hewing Hotel into a runway. Guests arrive dressed in black from head to toe and become part of the show.",
+        "A professional cast of models, stylists, musicians and performers presents the boutique's fall collections. The event has grown to roughly 400 guests.",
+        "For 2026 the evening partners with Coated in Love and its 3,000 Acts of Kindness campaign: guests are invited to bring a coat, gloves or other winter essentials for neighbors experiencing homelessness."
+      ],
+      "facts": [
+        { "value": "9th", "label": "annual show (2026)" },
+        { "value": "~400", "label": "guests" },
+        { "value": "150 ft", "label": "red carpet" }
+      ],
+      "gallery": [
+        "2021/12/all_black_attire_2021_076.jpg", "2021/12/all_black_attire_2021_096.jpg", "2021/12/all_black_attire_2021_094.jpg",
+        "2021/12/all_black_attire_2021_095.jpg", "2021/12/all_black_attire_2021_077.jpg"
+      ],
+      "galleryCredit": "2021 photos: John Bolton",
+      "sources": ["posts/2026-09-08-9th-annual-all-black-attire-fashion-show-party-at-martinpatrick3-brings-philanthropy-to-minneapolis", "posts/2026-09-12-9th-annual-all-black-attire-fashion-show"]
+    },
+    {
+      "slug": "dandies-project",
+      "name": "The Dandies Project",
+      "short": "Dandies Project",
+      "kicker": "Book, lookbooks and release parties · 2014–2017",
+      "tagline": "Celebrating the positive impact of men of color, with a sense of purpose and a sense of style.",
+      "image": "2013/12/Dandies_promo_img_1.jpg",
+      "match": "dandies",
+      "story": [
+        "IAmMoody started The Dandies Project to highlight the impact men of color have made in their communities, doing it with purpose and with style.",
+        "The project began with a photo shoot in December 2013 for a tabletop book, followed by a book launch at Coup d'état Uptown, annual lookbooks, video and press coverage.",
+        "In 2017 the project kicked off with a February event at Urban Eatery, including a silent auction, and a March lookbook release party at 514 Studio."
+      ],
+      "facts": [
+        { "value": "2014", "label": "book released" },
+        { "value": "2017", "label": "lookbook release party, 514 Studio" }
+      ],
+      "gallery": ["2013/12/Dandies_promo_img_1.jpg", "2015/05/dandies-book.jpg", "2016/04/dandies-project.jpg", "2017/02/16299894_1809167102679690_9152799360326736893_o.jpg"],
+      "sources": ["posts/2013-12-14-the-dandies-project-underway", "posts/2017-02-04-dandies-project-2017-happening", "pages/home/calendar/dandies-project"]
+    }
+  ],
+
+  "caseStudies": [
+    {
+      "slug": "all-black-attire-fashion-show",
+      "title": "All Black Attire Fashion Show & Party",
+      "client": "MartinPatrick3",
+      "service": "Fashion Show Production",
+      "year": "2026 (9th annual)",
+      "location": "North Loop, Minneapolis",
+      "image": "2026/09/2026DammelPhoto_MP3AllBlackPromo_7-scaled-1.webp",
+      "summary": "A luxury boutique's fall runway in a string-lit alley: nine years running, about 400 guests, and in 2026 a winter-coat drive with Coated in Love.",
+      "sections": [
+        { "h": "The brief", "p": "Give a luxury men's and women's boutique a fall runway moment that guests would dress up for, and give the evening a purpose beyond the show." },
+        { "h": "What we produced", "p": "An outdoor runway in the alley between MartinPatrick3 and the Hewing Hotel, a 150-foot red carpet, a professional cast of models, stylists, musicians and performers, and an all-black dress code that turns every guest into part of the visual identity." },
+        { "h": "The result", "p": "Now in its ninth year, the event draws roughly 400 guests, and the 2026 fashion-show tickets sold out. This year's charity partner, Coated in Love, collected coats, gloves and winter essentials for people experiencing homelessness." }
+      ],
+      "stats": [{ "value": "9", "label": "years" }, { "value": "~400", "label": "guests" }, { "value": "Sold out", "label": "2026 runway tickets" }],
+      "gallery": ["2021/12/all_black_attire_2021_076.jpg", "2021/12/all_black_attire_2021_096.jpg", "2021/12/all_black_attire_2021_094.jpg"],
+      "series": "all-black-attire-party",
+      "sources": ["posts/2026-09-08-9th-annual-all-black-attire-fashion-show-party-at-martinpatrick3-brings-philanthropy-to-minneapolis", "posts/2026-09-12-9th-annual-all-black-attire-fashion-show"]
+    },
+    {
+      "slug": "holiday-charity-party",
+      "title": "Richard Moody's Holiday Charity Party",
+      "client": "Community fundraiser",
+      "service": "Custom Events",
+      "year": "33rd annual (2024)",
+      "location": "Granada Theater, Minneapolis",
+      "image": "2024/12/elp-5734.jpg",
+      "summary": "More than three decades of December giving: toys, gifts and donations for Twin Cities kids and teens.",
+      "sections": [
+        { "h": "The brief", "p": "Turn a holiday party into a reliable engine for giving, with a different local charity supported each year." },
+        { "h": "What we produced", "p": "A full evening of live music, DJ sets, gift collection and guest hospitality, with sponsors and a named beneficiary each year. In 2024 the event supported the Sabathani Community Center with a gift drive aimed at teens." },
+        { "h": "The result", "p": "Every dollar and gift collected goes to the featured charity. Past beneficiaries include the Domestic Abuse Project, Sabathani Community Center, The Link, WE WIN Institute and The Sanneh Foundation." }
+      ],
+      "stats": [{ "value": "33rd", "label": "annual party" }, { "value": "5+", "label": "charities supported (named in our archive)" }],
+      "gallery": ["2024/12/elp-5596.jpg", "2024/12/elp-6190.jpg", "2024/12/elp-5592.jpg"],
+      "series": "holiday-charity-party",
+      "sources": ["posts/2024-12-17-richard-moodys-33rd-annual-holiday-charity-party-a-magical-evening-of-giving-back", "posts/2021-12-18-recap-moodys-30th-annual-holiday-party"]
+    },
+    {
+      "slug": "threads-of-impact",
+      "title": "Threads of Impact: Black Fashion Week",
+      "client": "Sister Spokesman / Minnesota Spokesman-Recorder",
+      "service": "Fashion Show Production",
+      "year": "2025",
+      "location": "Wilder Center, St. Paul",
+      "image": "2025/05/richard_moody_spokesman_2025.jpg",
+      "summary": "A fashion and beauty showcase celebrating Twin Cities Black designers, retailers and beauty innovators, curated and produced by Richard Moody.",
+      "sections": [
+        { "h": "The brief", "p": "Curate a fashion-and-beauty afternoon for Black Fashion Week that spotlights local Black designers, boutiques and beauty artists." },
+        { "h": "What we produced", "p": "A live runway with three designers (Kathryn Rogers of House of KLynn, Satiya Amporful of Uniquely Global and Marques Armstrong of Renaissance), a beauty showcase, vendors, refreshments, games and a \"Chic Impact\" best-dressed contest." },
+        { "h": "The result", "p": "Minnesota's top models took the runway, and Sister Spokesman honored Richard and fellow fashion icon Sara Rogers for their contributions to the industry." }
+      ],
+      "stats": [{ "value": "3", "label": "featured designers" }, { "value": "May 3", "label": "2025" }],
+      "gallery": ["2025/04/Black-Spokesman-Fashion-Show-2025.webp"],
+      "sources": ["posts/2025-04-15-threads-of-impact-black-fashion-week-2025", "posts/2025-05-18-threads-of-impact-a-night-to-remember"]
+    },
+    {
+      "slug": "house-of-klynn",
+      "title": "House of KLynn Runway Shows",
+      "client": "House of KLynn",
+      "service": "Fashion Show Production",
+      "year": "2022–2026",
+      "location": "Minneapolis",
+      "image": "/assets/img/house-of-klynn-runway.jpg",
+      "heroPlain": true,
+      "summary": "From the label's debut at Glasshouse to couture galas and an All White Attire Party for its bridal line.",
+      "sections": [
+        { "h": "The brief", "p": "Introduce a new Minneapolis couture label and build a run of shows that grew its audience." },
+        { "h": "What we produced", "p": "The House of KLynn introduction at Glasshouse, inspired by André Leon Talley; the spring 2022 runway as part of Black Market MPLS; the 2022 gala couture runway; and the 2024 All White Attire Party featuring the label's bridal line." },
+        { "h": "Since then", "p": "House of KLynn presents A Pop of Pink on June 19, 2026, a couture runway benefiting the American Cancer Society." }
+      ],
+      "stats": [{ "value": "3+", "label": "runway shows" }],
+      "gallery": ["/assets/img/house-of-klynn-runway.jpg", "2024/04/438222982_447324524483144_3980552554126283031_n.jpg", "2026/04/pop-of-pink-hero-2026.jpg"],
+      "sources": ["posts/2022-04-10-house-of-klynn", "events/2022-04-09-house-of-klynn-fashion-show-spring-2022", "posts/2026-06-22-the-pop-of-pink-june-19-2026"]
+    },
+    {
+      "slug": "dandies-project",
+      "title": "The Dandies Project",
+      "client": "IAmMoody original",
+      "service": "Brand & Community Project",
+      "year": "2014–2017",
+      "location": "Minneapolis",
+      "image": "2013/12/Dandies_promo_img_1.jpg",
+      "summary": "An original project honoring men of color: a tabletop book, lookbooks, video and release parties.",
+      "sections": [
+        { "h": "The idea", "p": "Highlight the positive impact of men of color in their own communities, with a sense of purpose and a sense of style." },
+        { "h": "What we produced", "p": "A photo shoot and tabletop book, a book launch at Coup d'état Uptown, yearly lookbooks and video, and launch events with silent auctions, including the 2017 kickoff at Urban Eatery and lookbook release at 514 Studio." },
+        { "h": "Recognition", "p": "The project was featured by Mshale and KFAI, among other press." }
+      ],
+      "stats": [{ "value": "4", "label": "years of editions" }],
+      "gallery": ["2015/05/dandies-book.jpg", "2016/04/dandies-project.jpg", "2017/02/16299894_1809167102679690_9152799360326736893_o.jpg"],
+      "series": "dandies-project",
+      "sources": ["posts/2013-12-14-the-dandies-project-underway", "posts/2015-05-26-dandies-project-featured-on-mshale", "posts/2015-07-02-kfais-will-wright-interviews-the-dandies", "posts/2017-02-04-dandies-project-2017-happening"]
+    },
+    {
+      "slug": "4-h-style-revue",
+      "title": "Minnesota 4-H Style Revue",
+      "client": "University of Minnesota Extension",
+      "service": "Fashion Show Production (volunteer)",
+      "year": "33 years as of 2022",
+      "location": "Minnesota State Fair",
+      "image": "2026/09/4h-style-show-rehearse.jpg",
+      "summary": "Three decades of volunteer coaching and production for the State Fair's youth runway show.",
+      "sections": [
+        { "h": "The commitment", "p": "Richard has volunteered with the 4-H Style Revue at the Minnesota State Fair for 33 years as of 2022, by his own estimate working with at least 700 participants." },
+        { "h": "The approach", "p": "Poise, personality and the freedom to embrace individuality: helping young people present themselves and their clothing with confidence." },
+        { "h": "Recognition", "p": "The University of Minnesota Extension profiled the work in September 2022." }
+      ],
+      "stats": [{ "value": "33", "label": "years (as of 2022)" }, { "value": "700+", "label": "participants" }],
+      "gallery": [],
+      "sources": ["posts/2026-09-07-richard-moodys-minnesota-4-h-legacy-twin-cities-fashion-producer-mentor"]
+    }
+  ],
+
+  "testimonials": [],
+
+  "clients": [
+    "MartinPatrick3", "Sabathani Community Center", "The Sanneh Foundation", "WE WIN Institute", "House of KLynn",
+    "Minnesota Spokesman-Recorder", "University of Minnesota Extension", "Hallie Q. Brown Community Center",
+    "Delta Air Lines", "Minnesota Lynx", "Von Maur", "Domestic Abuse Project", "Aliveness Project", "Kids Voting USA",
+    "Exit Realty Metro", "airforce Nutrisoda"
+  ],
+
+  "milestones": [
+    "Began modeling while attending the University of Minnesota, including shows for Dayton's, Donaldson's and Powers'.",
+    "Produced and choreographed fashion shows in Paris and London.",
+    "Global brand ambassador for airforce Nutrisoda, attending events including the Grammys, the Oscars and the Aspen Food & Wine Festival.",
+    "Honoree at the 10th Annual Dress for Success gala in New York City (April 2007).",
+    "Volunteer producer and coach for the Minnesota 4-H Style Revue at the State Fair.",
+    "Curator and producer of Threads of Impact for Black Fashion Week (2025), honored by Sister Spokesman."
+  ],
+
+  "faq": [
+    { "q": "Are you a clothing designer?", "a": "No, but if you need one we are happy to give referrals." },
+    { "q": "Are you a talent or modeling agency?", "a": "No, but if you need one we can refer that too." },
+    { "q": "Do you produce events nationally?", "a": "IAmMoody is headquartered in Minneapolis and serves the Twin Cities metro area, but we can handle your event anywhere in the United States, or globally." },
+    { "q": "Can you sell my fashion for me?", "a": "Sorry, no. We are not a retailer." },
+    { "q": "Do you only do fashion?", "a": "Absolutely not. Fashion is our specialty, but we can handle nearly any event." },
+    { "q": "Why aren't there prices on the website?", "a": "Every event is unique, so pricing is different from event to event. Send us the details and we'll send you a quote." },
+    { "q": "Where can I learn more about Richard Moody?", "a": "Visit richardtmoody.com." },
+    { "q": "Is IAmMoody hiring?", "a": "We are always interested in hearing from people who want to work with us. Email {email} or use the form on this page." }
+  ],
+
+  "process": [
+    { "h": "Discovery", "p": "We learn about your brand, audience, date and budget." },
+    { "h": "Concept & plan", "p": "Theme, venue, cast, run-of-show and timeline." },
+    { "h": "Production", "p": "Casting, rehearsals, staging, sound and light, guest experience." },
+    { "h": "Show day & after", "p": "We run the show, then follow up with photos and a wrap-up." }
+  ]
+}

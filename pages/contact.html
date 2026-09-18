@@ -1,0 +1,81 @@
+<!--meta {"title":"Plan Your Event | Contact IAmMoody","description":"Tell us about your fashion show or event. IAmMoody is based in Minneapolis and serves the Twin Cities and beyond."} -->
+<section class="page-hero plain">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1>Let's plan your event.</h1>
+    <p class="hero-sub">Tell us a little about what you have in mind. We reply with ideas and a quote.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+    <div>
+    <form class="form" id="inquiry"
+          action="mailto:{{site.email}}?subject=Event%20inquiry" method="post" enctype="text/plain">
+      <div class="row">
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Your email<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <div class="row">
+        <label>Phone <span class="opt">(optional)</span><input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Organization <span class="opt">(optional)</span><input name="organization" autocomplete="organization"></label>
+      </div>
+      <div class="row">
+        <label>Type of event
+          <select name="eventType" required>
+            <option value="">Choose one</option>
+            <option>Fashion show</option>
+            <option>Charity or fundraising event</option>
+            <option>Grand opening or launch</option>
+            <option>Corporate event</option>
+            <option>Brand activation or promotion</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Approximate date<input type="date" name="date"></label>
+      </div>
+      <div class="row">
+        <label>Location <span class="opt">(city or venue)</span><input name="location"></label>
+        <label>Expected guests
+          <select name="guests"><option value="">Not sure yet</option><option>Under 50</option><option>50–150</option><option>150–400</option><option>400+</option></select>
+        </label>
+      </div>
+      <label>Budget range <span class="opt">(optional)</span>
+        <select name="budget"><option value="">Prefer to discuss</option><option>Under $5,000</option><option>$5,000–$15,000</option><option>$15,000–$50,000</option><option>$50,000+</option></select>
+      </label>
+      <label>Tell us about your idea<textarea name="message" rows="5" required></textarea></label>
+      <label>How did you hear about us? <span class="opt">(optional)</span><input name="source"></label>
+      <button class="btn btn-primary" type="submit">Send by email</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="muted small">This opens your email app with your message filled in. Nothing is sent until you press Send there. Prefer to write it yourself? Email <a class="mail-link" href="mailto:{{site.email}}">{{site.email}}</a>.</p>
+    </form>
+
+    <div class="mailto-fallback" id="mailto-fallback" hidden>
+      <p><strong>Your email app should have opened</strong> with your message ready to send.</p>
+      <p>Nothing happened? <a id="mailto-again" href="mailto:{{site.email}}">Try again</a>, or
+        <button type="button" class="linklike" id="copy-message">copy your message</button>
+        and paste it into an email to <a class="mail-link" href="mailto:{{site.email}}">{{site.email}}</a>.</p>
+      <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+    </div>
+    </div>
+
+    <aside class="contact-side">
+      <h2 class="h3">Email Richard</h2>
+      <p><a class="mail-link" href="mailto:{{site.email}}">{{site.email}}</a></p>
+      <h2 class="h3">Follow along</h2>
+      {{partial:social}}
+      <h2 class="h3">Based in</h2>
+      <p>Minneapolis, Minnesota. We serve the Twin Cities metro and produce events anywhere.</p>
+      <h2 class="h3">Working with us</h2>
+      <p>Interested in joining the team? Choose "Something else" and tell us about yourself.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container narrow">
+    <p class="eyebrow">FAQ</p>
+    <h2>Good questions.</h2>
+    {{partial:faq}}
+  </div>
+</section>
