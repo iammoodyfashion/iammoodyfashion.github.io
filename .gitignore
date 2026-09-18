@@ -10,6 +10,9 @@ data/*.tmp
 .DS_Store
 
 iammoody-export
+iammoody
+iammoody.pub
+deploy.sh
 
 # NOTE: dist/ is committed ON PURPOSE. It is the built website that gets published.
 # (The build needs ../iammoody-export, which is not part of this repository, so GitHub cannot build it for you.)
