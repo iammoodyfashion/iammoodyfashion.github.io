@@ -55,8 +55,7 @@
 
   // invitation list signup: submit to Mailchimp in the page (JSONP, the method Mailchimp's own embed script uses)
   // and show the reply here. Without JavaScript the form posts to Mailchimp in a new tab instead.
-  var signupForm = document.getElementById('signup');
-  if (signupForm) {
+  document.querySelectorAll('.signup-form').forEach(function (signupForm) {
     var signupStatus = signupForm.querySelector('.signup-status'), signupBtn = signupForm.querySelector('button');
     var say = function (cls, text) { signupStatus.className = 'signup-status ' + cls; signupStatus.textContent = text; };
     signupForm.addEventListener('submit', function (e) {
@@ -77,7 +76,7 @@
       signupBtn.disabled = true; say('', 'Signing you up…');
       document.body.appendChild(script);
     });
-  }
+  });
 
   // contact form: open the visitor's email app with the message filled in (mailto:).
   // Without JavaScript the form's own mailto: action still works, just with plainer formatting.

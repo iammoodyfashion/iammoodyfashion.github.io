@@ -257,6 +257,14 @@ textarea { resize: vertical; }
 .signup-status:empty { min-height: 0; }
 .signup-status.ok { color: #9fd9ad; }
 .signup-status.err { color: #f0a3ad; }
+.signup-band { background: var(--red); color: #fff; padding: 48px 0; }
+.signup-band .signup { padding-bottom: 0; margin-bottom: 0; border: 0; }
+.signup-band .eyebrow.light { color: #f1dcae; margin-bottom: 8px; }
+.signup-band .muted { color: #f6e3e5; }
+.signup-band .signup-form input { border-color: transparent; }
+.signup-band .btn-primary { background: var(--ink); }
+.signup-band .btn-primary:hover { background: #fff; color: var(--ink); }
+.signup-band .signup-status.ok, .signup-band .signup-status.err { color: #fff; }
 .footer-base { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; padding: 22px 24px; border-top: 1px solid rgba(255,255,255,.12); font-size: .85rem; color: #a8a190; }
 
 /* ---- reveal ---- */
