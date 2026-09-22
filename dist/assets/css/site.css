@@ -247,6 +247,16 @@ textarea { resize: vertical; }
 .site-footer a { text-decoration: none; }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
 .site-footer .muted { color: #a8a190; }
+.signup { display: grid; grid-template-columns: 1fr 1.3fr; gap: 24px 48px; align-items: center; padding-bottom: 56px; margin-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.signup h2 { color: #fff; margin-bottom: .3em; }
+.signup-copy p { margin: 0; }
+.signup-form { display: grid; grid-template-columns: 1fr 1.5fr auto; gap: 10px; }
+.signup-form input { padding: 12px 14px; }
+.signup-form .hp { position: absolute; left: -5000px; }
+.signup-status { grid-column: 1 / -1; margin: 0; min-height: 1.5em; font-weight: 500; }
+.signup-status:empty { min-height: 0; }
+.signup-status.ok { color: #9fd9ad; }
+.signup-status.err { color: #f0a3ad; }
 .footer-base { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; padding: 22px 24px; border-top: 1px solid rgba(255,255,255,.12); font-size: .85rem; color: #a8a190; }
 
 /* ---- reveal ---- */
@@ -259,7 +269,7 @@ textarea { resize: vertical; }
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .stat-strip { grid-template-columns: 1fr 1fr; }
   .process { grid-template-columns: 1fr 1fr; }
-  .split, .case-layout, .contact-layout, .footer-grid { grid-template-columns: 1fr; }
+  .split, .case-layout, .contact-layout, .footer-grid, .signup { grid-template-columns: 1fr; }
   .split.reverse .split-media { order: 0; }
   .split-media img { min-height: 280px; max-height: 480px; }
   .event-row a { grid-template-columns: 1fr; gap: 2px; }
@@ -278,7 +288,7 @@ textarea { resize: vertical; }
   .hero::after { background: linear-gradient(180deg, rgba(14,13,12,.5) 0%, rgba(14,13,12,.55) 30%, rgba(14,13,12,.93) 68%); }
   .hero h1 em { color: #d8bd85; }
   .section { padding: 60px 0; }
-  .grid-3, .process, .form .row { grid-template-columns: 1fr; }
+  .grid-3, .process, .form .row, .signup-form { grid-template-columns: 1fr; }
   .masonry { columns: 1; }
   .hero { min-height: 86vh; }
   .section-head { flex-direction: column; align-items: flex-start; }

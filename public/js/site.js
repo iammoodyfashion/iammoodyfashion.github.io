@@ -53,6 +53,32 @@
     document.body.appendChild(lb);
   });
 
+  // invitation list signup: submit to Mailchimp in the page (JSONP, the method Mailchimp's own embed script uses)
+  // and show the reply here. Without JavaScript the form posts to Mailchimp in a new tab instead.
+  var signupForm = document.getElementById('signup');
+  if (signupForm) {
+    var signupStatus = signupForm.querySelector('.signup-status'), signupBtn = signupForm.querySelector('button');
+    var say = function (cls, text) { signupStatus.className = 'signup-status ' + cls; signupStatus.textContent = text; };
+    signupForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var cb = 'mcSignup' + Date.now(), script = document.createElement('script'), timer;
+      var done = function () { clearTimeout(timer); delete window[cb]; script.remove(); signupBtn.disabled = false; };
+      window[cb] = function (res) {
+        done();
+        var msg = String(res && res.msg || '').replace(/<[^>]*>/g, '').replace(/^\d+\s*-\s*/, '').trim(); // Mailchimp's msg can hold HTML and a "0 - " prefix
+        if (res && res.result === 'success') { say('ok', msg || 'Thank you for signing up!'); signupForm.reset(); }
+        else if (/already subscribed/i.test(msg)) say('ok', "You're already on the list. Thank you!");
+        else say('err', msg || 'Something went wrong. Please try again.');
+      };
+      var params = new URLSearchParams(new FormData(signupForm)); params.set('c', cb);
+      script.src = signupForm.action.replace('/subscribe/post?', '/subscribe/post-json?') + '&' + params.toString();
+      script.onerror = function () { done(); say('err', 'Could not reach the signup service. Please try again.'); };
+      timer = setTimeout(script.onerror, 12000);
+      signupBtn.disabled = true; say('', 'Signing you up…');
+      document.body.appendChild(script);
+    });
+  }
+
   // contact form: open the visitor's email app with the message filled in (mailto:).
   // Without JavaScript the form's own mailto: action still works, just with plainer formatting.
   var inquiry = document.getElementById('inquiry');
