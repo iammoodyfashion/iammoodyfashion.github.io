@@ -24,6 +24,8 @@ npm run preview                                        # optional: see it exactl
 ```
 If you used `BASE_PATH`, give `npm run preview` the same `BASE_PATH`.
 
+The build also writes a small forwarding page at each of the ~1,060 old WordPress addresses (listed in `../iammoody-export/sitemaps/`), so old links and search results land on the new site. Hand-picked destinations are in `data/redirects.json`; everything else follows the rules in `lib/redirects.js`. The build stops if a destination isn't a real page. After publishing, run `npm run check-redirects` to confirm every old address forwards to a page that loads (add `-- http://localhost:4000` to check a local preview instead).
+
 ## 3. What to commit
 
 Make **this `site/` folder the repository root** and commit everything in it **including `dist/`**:
@@ -31,7 +33,7 @@ Make **this `site/` folder the repository root** and commit everything in it **i
 | Commit | Why |
 |---|---|
 | `dist/` | The built website (about 14 MB, including the optimized photos). This is what gets published. |
-| `pages/`, `lib/`, `data/curated.json`, `public/`, `scripts/`, `layout.html`, `package.json`, docs | The source, so you can change and rebuild the site later. |
+| `pages/`, `lib/`, `data/curated.json`, `data/redirects.json`, `public/`, `scripts/`, `layout.html`, `package.json`, docs | The source, so you can change and rebuild the site later. |
 | `.github/workflows/pages.yml` | Tells GitHub to publish `dist/`. |
 | `CNAME` (custom domain only) | Keeps the domain attached. |
 

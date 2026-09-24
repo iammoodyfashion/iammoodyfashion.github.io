@@ -9,6 +9,8 @@
 //   OPTIMIZE_IMAGES=0             skip image optimization and copy the original photos (much bigger site).
 //   CNAME file in site/           custom domain name (one line, e.g. www.iammoody.com); copied into dist/.
 //
+// Old WordPress addresses get forwarding pages (see lib/redirects.js and data/redirects.json).
+//
 //   SITE_URL=https://www.iammoody.com npm run build
 //
 // Photos: every raster image the pages use is converted to WebP at up to three widths (640/1280/1920, never
@@ -19,6 +21,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 const D = require('../lib/data');
 const R = require('../lib/render');
+const { redirects } = require('../lib/redirects');
 
 const DIST = path.join(D.ROOT, 'dist');
 const CACHE = path.join(D.ROOT, '.cache');
@@ -131,6 +134,21 @@ for (const p of pages) {
   fs.mkdirSync(path.dirname(path.join(DIST, p.file)), { recursive: true });
   fs.writeFileSync(path.join(DIST, p.file), finalize(p.html, p.route));
 }
+// Old WordPress addresses: a tiny page at each that forwards to its new home (lib/redirects.js). GitHub Pages can't
+// send real redirects; Google treats an instant refresh plus a canonical link like a permanent one.
+const forwards = redirects(R.allRoutes());
+for (const { from, to } of forwards) {
+  const file = path.join(DIST, from, 'index.html');
+  if (fs.existsSync(file)) continue;   // never replace a real page
+  const url = D.esc(SITE + BASE + to);
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>This page has moved</title>
+<link rel="canonical" href="${url}"><meta http-equiv="refresh" content="0; url=${url}">
+<script>location.replace(${JSON.stringify(SITE + BASE + to)} + location.hash)</script></head>
+<body><p>This page has moved: <a href="${url}">${url}</a></p></body></html>
+`);
+}
+
 // assets (site css/js/img); the review tools are intentionally not part of the public build
 fs.cpSync(path.join(D.ROOT, 'public'), path.join(DIST, 'assets'), { recursive: true, filter: (s) => !/review\.(css|js)$/.test(s) });
 
@@ -164,5 +182,5 @@ if (SITE) {
 }
 
 const mb = (n) => (n / 1e6).toFixed(1) + ' MB';
-console.log(`${pages.filter((p) => p.route).length} pages | media: ${optimized} photos optimized, ${copiedAsIs} copied as-is, ${missing} missing | ${mb(bytesIn)} originals -> ${mb(bytesOut)} published`);
+console.log(`${pages.filter((p) => p.route).length} pages | ${forwards.length} old WordPress addresses forwarded | media: ${optimized} photos optimized, ${copiedAsIs} copied as-is, ${missing} missing | ${mb(bytesIn)} originals -> ${mb(bytesOut)} published`);
 console.log(`base path: ${BASE || '(none: site root)'} | site url: ${SITE || '(not set: no sitemap/canonical/absolute preview image)'} | CNAME: ${fs.existsSync(cname) ? fs.readFileSync(cname, 'utf8').trim() : '(none)'}`);

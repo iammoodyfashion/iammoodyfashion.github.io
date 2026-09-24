@@ -7,6 +7,7 @@
     "start": "node server.js",
     "build": "node scripts/build-static.js",
     "check": "node scripts/check-media.js",
+    "check-redirects": "node scripts/check-redirects.js",
     "preview": "node scripts/preview.js"
   },
   "engines": {
