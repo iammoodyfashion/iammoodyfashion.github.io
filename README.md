@@ -51,6 +51,11 @@ Structure follows `PROPOSED_SITE_STRUCTURE.md`, with your decisions applied: fas
 
 Photos are referenced by their path inside `iammoody-export/media/` (e.g. `2024/12/elp-5734.jpg`) and served from there. Run `npm run check` to confirm every curated image exists.
 
+### Adding a new event
+New events go in `events` in `data/curated.json` (the WordPress export stays a read-only archive). Copy the existing entry and change it: `start`/`end` are local time (`"2026-10-08 18:00:00"`), `body` is a list of plain paragraphs, `image` is the hero photo, `gallery` is optional, and `linkLabel` replaces the "Get tickets" button text. Put photos in `public/img/` and reference them as `/assets/img/<file>`. The event shows under "Upcoming events" until its date, then moves into the archive by itself.
+
+Every upcoming event also gets a **social card** at `/events/<slug>/card` (linked from the event page as "Social card"): a phone-sized poster to screenshot for an Instagram story or feed post. It uses the event's `image`, and the optional `tagline` as its one-line pitch. Styles are in `public/css/card.css`.
+
 ### Content still to add
 No placeholder markers appear on the site. These are simply absent until you have them:
 - **Testimonials**: add `{ "quote", "name", "role" }` entries to `testimonials` in `data/curated.json` and a "What clients say" section appears on the home and Work pages automatically.

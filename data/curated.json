@@ -286,5 +286,28 @@
     { "h": "Concept & plan", "p": "Theme, venue, cast, run-of-show and timeline." },
     { "h": "Production", "p": "Casting, rehearsals, staging, sound and light, guest experience." },
     { "h": "Show day & after", "p": "We run the show, then follow up with photos and a wrap-up." }
+  ],
+  "events": [
+    {
+      "id": "technicolor-truth-2026",
+      "slug": "the-technicolor-truth-2026",
+      "title": "The Technicolor Truth Art Gallery",
+      "start": "2026-10-08 18:00:00",
+      "end": "2026-10-08 20:00:00",
+      "venue": "Grace-Trinity Community Church",
+      "address": "1430 W. 28th St., Minneapolis, MN 55408",
+      "cost": "",
+      "ticketUrl": "https://gracetrinitychurch.org/events_activities/the-technicolor-truth-art-gallery",
+      "linkLabel": "Event details",
+      "tagline": "17 local artists. Revelation, Revolution, Resuscitation. Hosted by Richard Moody.",
+      "categories": ["Art Show", "IamMoody Event"],
+      "image": "/assets/img/technicolor-truth-dryrun-2.jpg",
+      "body": [
+        "The fourth annual Technicolor Truth exhibition brings together 17 local artists around the theme Revelation, Revolution, Resuscitation.",
+        "When the institutions created to protect the people become instruments of intimidation and control, what do we do? The show invites us to recognize that transformation is necessary, and to revitalize our communities.",
+        "Richard Moody worked with Grace-Trinity Community Church to curate the art, connect the artists with the show and promote it, and he hosts the evening."
+      ],
+      "gallery": ["/assets/img/technicolor-truth-2026.png", "/assets/img/technicolor-truth-dryrun-1.jpg", "/assets/img/technicolor-truth-dryrun-2.jpg"]
+    }
   ]
 }

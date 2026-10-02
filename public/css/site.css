@@ -223,6 +223,14 @@ textarea { resize: vertical; }
 .social-link:hover span { text-decoration: underline; text-underline-offset: 3px; }
 .site-footer .social-link { color: #d7d0c2; } .site-footer .social-link:hover { color: #fff; text-decoration: none; }
 .contact-side .social-link:hover { color: var(--red); }
+.share { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); }
+.share-label { font: 600 .72rem var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin: 0 0 10px; }
+.share-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.share-btn { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.share-btn[hidden] { display: none; }
+.share-btn:hover, .share-btn:focus-visible { background: var(--ink); border-color: var(--ink); color: #fff; }
+.share-btn svg { width: 19px; height: 19px; }
+.share-status { margin: 8px 0 0; min-height: 1.4em; }
 .mail-link { color: inherit; font-weight: 600; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; overflow-wrap: anywhere; }
 .mail-link:hover { text-decoration-color: var(--red); }
 .site-footer .mail-link { color: #fff; }

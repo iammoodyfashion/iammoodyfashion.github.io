@@ -53,6 +53,24 @@
     document.body.appendChild(lb);
   });
 
+  // share buttons (event pages): the phone's own share sheet where supported, and "Copy link" copies instead of navigating
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function (box) {
+    var data = { title: box.getAttribute('data-title'), text: box.getAttribute('data-text'), url: box.getAttribute('data-url') };
+    var status = box.querySelector('.share-status');
+    var native = box.querySelector('[data-share-native]');
+    if (native && navigator.share) {
+      native.hidden = false;
+      native.addEventListener('click', function () { navigator.share(data).catch(function () {}); });
+    }
+    var copy = box.querySelector('[data-share-copy]');
+    if (copy && navigator.clipboard) copy.addEventListener('click', function (e) {
+      e.preventDefault();
+      navigator.clipboard.writeText(data.url)
+        .then(function () { status.textContent = 'Link copied.'; })
+        .catch(function () { status.textContent = data.url; });
+    });
+  });
+
   // invitation list signup: submit to Mailchimp in the page (JSONP, the method Mailchimp's own embed script uses)
   // and show the reply here. Without JavaScript the form posts to Mailchimp in a new tab instead.
   document.querySelectorAll('.signup-form').forEach(function (signupForm) {
