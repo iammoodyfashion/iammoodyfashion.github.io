@@ -176,7 +176,8 @@ fs.writeFileSync(path.join(DIST, '.nojekyll'), '');                        // se
 const cname = path.join(D.ROOT, 'CNAME');
 if (fs.existsSync(cname)) fs.copyFileSync(cname, path.join(DIST, 'CNAME')); // custom domain
 if (SITE) {
-  const urls = pages.filter((p) => p.route).map((p) => `  <url><loc>${SITE}${BASE}${p.route === '/' ? '/' : p.route + '/'}</loc></url>`).join('\n');
+  // card and press pages are noindex print/screenshot aids, so they stay out of the sitemap
+  const urls = pages.filter((p) => p.route && !/\/(card|press)$/.test(p.route)).map((p) => `  <url><loc>${SITE}${BASE}${p.route === '/' ? '/' : p.route + '/'}</loc></url>`).join('\n');
   fs.writeFileSync(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
   fs.writeFileSync(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}${BASE}/sitemap.xml\n`);
 }

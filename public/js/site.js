@@ -150,4 +150,28 @@
         .catch(function () { copyStatus.textContent = 'Could not copy automatically. Please select your message in the form and copy it.'; });
     });
   }
+
+  // Be There timeline: drop items whose date passed since the last build, and add arrows when it scrolls sideways
+  document.querySelectorAll('[data-tl]').forEach(function (tl) {
+    var d = new Date(), today = d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+    tl.querySelectorAll('[data-until]').forEach(function (li) { if (li.getAttribute('data-until') < today) li.remove(); });
+    var track = tl.querySelector('[data-tl-track]'), nav = tl.querySelector('[data-tl-nav]');
+    var prev = tl.querySelector('[data-tl-prev]'), next = tl.querySelector('[data-tl-next]');
+    function update() {
+      var max = track.scrollWidth - track.clientWidth;
+      nav.hidden = max < 4;
+      prev.disabled = track.scrollLeft < 4;
+      next.disabled = track.scrollLeft > max - 4;
+    }
+    function step(dir) {
+      var item = track.querySelector('.tl-item');
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      track.scrollBy({ left: dir * (item ? item.offsetWidth : 300), behavior: reduce ? 'auto' : 'smooth' });
+    }
+    prev.addEventListener('click', function () { step(-1); });
+    next.addEventListener('click', function () { step(1); });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
 })();

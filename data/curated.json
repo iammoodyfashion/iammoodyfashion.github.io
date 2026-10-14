@@ -10,7 +10,14 @@
     "heroImage": "2026/09/2026DammelPhoto_MP3AllBlackPromo_7-scaled-1.webp",
     "richardPortrait": "2022/09/dev2021po_r-moody_005.jpg",
     "richardPortraitWide": "2022/04/richard_moody_eyebobs0106.jpg",
-    "richardRedCarpet": "2022/07/iammoody_hero_1.jpeg"
+    "richardRedCarpet": "2022/07/iammoody_hero_1.jpeg",
+    "press": {
+      "dateline": "Minneapolis, MN",
+      "contact": { "name": "Richard Moody" },
+      "about": [
+        "IAmMoody is a Minneapolis fashion show and event production company founded by Richard Moody. Richard started on the runway as a model and went on to produce, choreograph and host events in Minneapolis, Paris and London. IAmMoody produces runway shows, custom events and brand activations, along with its own signature series: the annual Holiday Charity Party, which collects gifts and donations for Twin Cities kids, teens and families, and the All Black Attire Party men's fashion show."
+      ]
+    }
   },
 
   "stats": [
@@ -68,6 +75,7 @@
   "series": [
     {
       "slug": "holiday-charity-party",
+      "recurs": { "month": 12, "label": "Every December" },
       "name": "Richard Moody's Holiday Charity Party",
       "short": "Holiday Charity Party",
       "kicker": "33rd annual · December 2024",
@@ -92,6 +100,7 @@
     },
     {
       "slug": "all-black-attire-party",
+      "recurs": { "month": 9, "label": "Every September" },
       "name": "All Black Attire Fashion Show & Party",
       "short": "All Black Attire Party",
       "kicker": "9th annual · September 16, 2026",
@@ -277,7 +286,6 @@
     { "q": "Can you sell my fashion for me?", "a": "Sorry, no. We are not a retailer." },
     { "q": "Do you only do fashion?", "a": "Absolutely not. Fashion is our specialty, but we can handle nearly any event." },
     { "q": "Why aren't there prices on the website?", "a": "Every event is unique, so pricing is different from event to event. Send us the details and we'll send you a quote." },
-    { "q": "Where can I learn more about Richard Moody?", "a": "Visit richardtmoody.com." },
     { "q": "Is IAmMoody hiring?", "a": "We are always interested in hearing from people who want to work with us. Email {email} or use the form on this page." }
   ],
 
@@ -315,7 +323,17 @@
       ],
       "gallery": ["/assets/img/technicolor-truth-2026.png", "/assets/img/technicolor-truth-dryrun-1.jpg", "/assets/img/technicolor-truth-dryrun-2.jpg",
                   "/assets/img/technicolor-truth-2026-01.jpg", "/assets/img/technicolor-truth-2026-02.jpg", "/assets/img/technicolor-truth-2026-03.jpg",
-                  "/assets/img/technicolor-truth-2026-04.jpg", "/assets/img/technicolor-truth-2026-05.jpg", "/assets/img/technicolor-truth-2026-06.jpg"]
+                  "/assets/img/technicolor-truth-2026-04.jpg", "/assets/img/technicolor-truth-2026-05.jpg", "/assets/img/technicolor-truth-2026-06.jpg"],
+      "pressRelease": {
+        "release": "For immediate release",
+        "headline": "The Technicolor Truth Art Gallery Returns to Grace-Trinity Community Church with 17 Local Artists",
+        "subhead": "The fourth annual exhibition, hosted by Richard Moody, takes on the theme Revelation, Revolution, Resuscitation on Thursday, October 8.",
+        "body": [
+          "Grace-Trinity Community Church presents the fourth annual Technicolor Truth Art Gallery on Thursday, October 8, 2026, from 6 to 9 p.m. at 1430 W. 28th St. in Minneapolis. The exhibition brings together 17 local artists around this year's theme: Revelation, Revolution, Resuscitation.",
+          "The show starts from a direct question: when the institutions created to protect the people become instruments of intimidation and control, what do we do? The artists' answer invites visitors to recognize that transformation is necessary, and to take part in revitalizing their communities.",
+          "Richard Moody, founder of the Minneapolis event production company IAmMoody, worked with Grace-Trinity Community Church to curate the art, connect the artists with the show and promote it. He hosts the evening."
+        ]
+      }
     }
   ]
 }

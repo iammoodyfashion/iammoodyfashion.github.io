@@ -54,7 +54,26 @@ Photos are referenced by their path inside `iammoody-export/media/` (e.g. `2024/
 ### Adding a new event
 New events go in `events` in `data/curated.json` (the WordPress export stays a read-only archive). Copy the existing entry and change it: `start`/`end` are local time (`"2026-10-08 18:00:00"`), `body` is a list of plain paragraphs, `image` is the hero photo, `gallery` is optional, and `linkLabel` replaces the "Get tickets" button text. Put photos in `public/img/` and reference them as `/assets/img/<file>` (these are not optimized by the build, so resize them to about 1600 px first). An optional `video` (an `.mp4` in `public/video/`, referenced as `/assets/video/<file>`, with a `poster` still image) adds a "Video" section; compress phone clips first (`ffmpeg -i in.mp4 -c:v libx264 -crf 28 -preset slow -c:a aac -b:a 96k -movflags +faststart out.mp4`). To add a video, poster or gallery to an event that came from the old site, put it under that event's slug in `eventMedia`. The event shows under "Upcoming events" until its date, then moves into the archive by itself.
 
+**Be There timeline** (currently **parked**: the nav tab and `/be-there` route are commented out in `lib/render.js`, and the home section in `pages/index.html`; to bring it back, uncomment those three, add `<li><a href="/be-there">Be There</a></li>` after Events in the footer list in `layout.html`, and set the mobile-nav breakpoint in `site.css` back to 960px so six tabs fit): a horizontal line of what's coming, soonest first, each dot with its photo card hanging from it. It fills itself from three places:
+- **Upcoming events** in `events`: a filled dot with the exact date and time.
+- **Recurring series**: a series in `series` with `"recurs": { "month": 12, "label": "Every December" }` shows a hollow dot at the month of its next edition (Holiday Charity Party and All Black Attire Party are set up this way). It rolls forward to next year by itself. Once you add the real event for that month to `events` (its title must match the series, e.g. contain "Holiday Party"), the exact date replaces the month and keeps the "Every December" tag.
+- **Rough plans**: one-off events known only by month go in a top-level `plans` list: `{ "title": "…", "month": "2027-06", "image": "…", "href": "/events/…" (optional), "note": "…" (optional, shown under the month) }`.
+
+Past items drop off at each build, and the page's script also hides anything whose date has passed since the last build. With more items than fit, the line scrolls sideways (swipe on phones; arrow buttons on desktop). Styles are under "Be There timeline" in `public/css/site.css`.
+
 Every upcoming event also gets a **social card** at `/events/<slug>/card` (linked from the event page as "Social card"): a phone-sized poster to screenshot for an Instagram story or feed post. It uses the event's `image`, and the optional `tagline` as its one-line pitch. Styles are in `public/css/card.css`.
+
+Any event with a `pressRelease` gets a **press release** at `/events/<slug>/press` (linked from the event page as "Press release", before and after the event): a printable US Letter page with a **Print or save as PDF** button. It combines the release text you write with the event's own details (date, time, venue, address, cost, link, and a link to the event page for photos), so those are never typed twice. The Technicolor Truth event in `data/curated.json` is a working example:
+
+```json
+"pressRelease": {
+  "headline": "The headline editors will see",
+  "subhead": "Optional one-sentence summary under it",
+  "body": ["First paragraph (the dateline is added in front of it)", "More paragraphs…"]
+}
+```
+
+Optional: `release` (default "For immediate release"; e.g. "Embargoed until Oct 1, 2026"), `date` (`"2026-09-30"`; without it the dateline shows the day the page is opened or printed), `dateline` (default "Minneapolis, MN"), `image` (a different photo, or `false` for none; default is the event photo), `contact` (`{ "name", "email", "phone" }` for a different media contact) and `about` (paragraphs replacing the "About IAmMoody" boilerplate). The site-wide defaults (contact name, dateline city, boilerplate) are in `site.press`; the contact email is `site.email`. For an event from the old site, put `pressRelease` under its slug in `eventMedia`. Styles are in `public/css/press.css`.
 
 ### Content still to add
 No placeholder markers appear on the site. These are simply absent until you have them:
