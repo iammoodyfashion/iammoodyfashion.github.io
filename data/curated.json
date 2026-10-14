@@ -287,6 +287,12 @@
     { "h": "Production", "p": "Casting, rehearsals, staging, sound and light, guest experience." },
     { "h": "Show day & after", "p": "We run the show, then follow up with photos and a wrap-up." }
   ],
+  "eventMedia": {
+    "9th-annual-all-black-attire-party-mens-fashion-show-martinpatrick3": {
+      "video": "/assets/video/all-black-attire-2026.mp4",
+      "poster": "/assets/video/all-black-attire-2026-poster.jpg"
+    }
+  },
   "events": [
     {
       "id": "technicolor-truth-2026",
@@ -307,7 +313,9 @@
         "When the institutions created to protect the people become instruments of intimidation and control, what do we do? The show invites us to recognize that transformation is necessary, and to revitalize our communities.",
         "Richard Moody worked with Grace-Trinity Community Church to curate the art, connect the artists with the show and promote it, and he hosts the evening."
       ],
-      "gallery": ["/assets/img/technicolor-truth-2026.png", "/assets/img/technicolor-truth-dryrun-1.jpg", "/assets/img/technicolor-truth-dryrun-2.jpg"]
+      "gallery": ["/assets/img/technicolor-truth-2026.png", "/assets/img/technicolor-truth-dryrun-1.jpg", "/assets/img/technicolor-truth-dryrun-2.jpg",
+                  "/assets/img/technicolor-truth-2026-01.jpg", "/assets/img/technicolor-truth-2026-02.jpg", "/assets/img/technicolor-truth-2026-03.jpg",
+                  "/assets/img/technicolor-truth-2026-04.jpg", "/assets/img/technicolor-truth-2026-05.jpg", "/assets/img/technicolor-truth-2026-06.jpg"]
     }
   ]
 }

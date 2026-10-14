@@ -192,6 +192,7 @@ body:not(.over-hero) .page-hero { padding-top: 72px; }
 .masonry-item:hover img { transform: scale(1.03); }
 .lightbox { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,.92); display: flex; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out; }
 .lightbox img { max-height: 92vh; max-width: 94vw; width: auto; }
+.event-video { display: block; width: 100%; max-width: 360px; aspect-ratio: 9 / 16; margin-top: 24px; background: var(--ink); border-radius: var(--radius); }
 
 /* ---- testimonials ---- */
 .quote { margin: 0; background: #fff; padding: 28px; border-radius: var(--radius); }
