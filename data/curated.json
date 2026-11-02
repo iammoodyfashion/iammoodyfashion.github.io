@@ -334,6 +334,29 @@
           "Richard Moody, founder of the Minneapolis event production company IAmMoody, worked with Grace-Trinity Community Church to curate the art, connect the artists with the show and promote it. He hosts the evening."
         ]
       }
+    },
+    {
+      "id": "paris-in-style-mia-2026",
+      "slug": "paris-in-style-mia-2026",
+      "title": "Paris in Style: A History of Couture",
+      "start": "2026-11-05 17:00:00",
+      "end": "2026-11-05 20:30:00",
+      "venue": "Minneapolis Institute of Art",
+      "address": "2400 Third Ave. S., Minneapolis, MN 55404",
+      "cost": "Free with registration",
+      "ticketUrl": "https://new.artsmia.org/event/panel-discussion-mixer-paris-style",
+      "linkLabel": "Register (free)",
+      "tagline": "A panel and mixer on tailoring, craftsmanship and personal style at Mia. Richard Moody is a guest speaker.",
+      "categories": ["Panel Discussion", "Fashion"],
+      "image": "/assets/img/paris-in-style-mia.jpg",
+      "body": [
+        "Richard Moody joins fellow fashion professionals at the Minneapolis Institute of Art for Paris in Style: A History of Couture, a panel discussion and mixer presented with Pieces of Kandakes. The panel is moderated by Rashawnda C. Scott, Founder & Creative Director of Pieces of Kandakes, and explores the art of tailoring, the importance of craftsmanship, and the relationship between fashion and personal style.",
+        "Richard's career in fashion began on the runway and grew into producing, choreographing and hosting fashion shows and events across Minneapolis, Paris and London. Through IAmMoody he produces shows including the All Black Attire Fashion Show at MartinPatrick3, and for more than three decades he has volunteered with the Minnesota 4-H Style Revue, helping young models build confidence and skills.",
+        "Also on the panel: Kathryn Rogers, Grand Couturier and founder of House of KLynn, whose couture stitching and garment construction appear in films including Hidden Figures, Passengers and Bessie; Robert Elder, Personal Stylist at MartinPatrick3, with more than two decades in fine and custom menswear; and Mimi Vo Nguyen, designer, founder of Jade Custom Studio and creator of the emerging label Mimi Nguyen.",
+        "Free admission with registration."
+      ],
+      "gallery": ["/assets/img/paris-in-style-richard-moody.png", "/assets/img/paris-in-style-kathryn-rogers.png",
+                  "/assets/img/paris-in-style-robert-elder.png", "/assets/img/paris-in-style-mimi-nguyen.png"]
     }
   ]
 }
