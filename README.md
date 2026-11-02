@@ -75,6 +75,11 @@ Any event with a `pressRelease` gets a **press release** at `/events/<slug>/pres
 
 Optional: `release` (default "For immediate release"; e.g. "Embargoed until Oct 1, 2026"), `date` (`"2026-09-30"`; without it the dateline shows the day the page is opened or printed), `dateline` (default "Minneapolis, MN"), `image` (a different photo, or `false` for none; default is the event photo), `contact` (`{ "name", "email", "phone" }` for a different media contact) and `about` (paragraphs replacing the "About IAmMoody" boilerplate). The site-wide defaults (contact name, dateline city, boilerplate) are in `site.press`; the contact email is `site.email`. For an event from the old site, put `pressRelease` under its slug in `eventMedia`. Styles are in `public/css/press.css`.
 
+### Invoice maker (`/invoice`, private)
+**www.iammoody.com/invoice** makes invoices: fill in the client, event, dates and service lines (date, service, description, qty/hours, rate), plus optional discount, sales tax and deposit, then press **Print or save as PDF** (in the print dialog choose **Save as PDF**; the file is named after the invoice number and client). It is not linked anywhere, is marked `noindex` and is left out of the sitemap, but anyone who knows the address can open the empty tool.
+
+Nothing is sent anywhere: invoices are saved only in the browser you use (localStorage), so a different computer or browser starts empty. Use **Back up all (.json)** now and then, and **Restore from backup** to move them to another browser. Invoice numbers count up per year (`2026-001`, `2026-002`…) and can be edited. Your "From" details, payment instructions and notes carry over to each new invoice; service names you type are remembered as suggestions alongside the three services in `data/curated.json`. Code: `invoicePage()` in `lib/render.js`, `public/js/invoice.js`, `public/css/invoice.css`.
+
 ### Content still to add
 No placeholder markers appear on the site. These are simply absent until you have them:
 - **Testimonials**: add `{ "quote", "name", "role" }` entries to `testimonials` in `data/curated.json` and a "What clients say" section appears on the home and Work pages automatically.
