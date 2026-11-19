@@ -78,10 +78,10 @@
       "recurs": { "month": 12, "label": "Every December" },
       "name": "Richard Moody's Holiday Charity Party",
       "short": "Holiday Charity Party",
-      "kicker": "33rd annual · December 2024",
+      "kicker": "Every December · Next: December 14, 2026",
       "tagline": "A December tradition in Minneapolis: bring a gift, give back, celebrate the season.",
       "image": "2024/12/elp-5734.jpg",
-      "match": "holiday (charity )?party|holiday toy",
+      "match": "holiday (charity |gift giving )?party|holiday toy",
       "story": [
         "Every December, Richard Moody's Holiday Charity Party brings friends, neighbors, models, business partners and supporters together to raise gifts and donations for Twin Cities children, teens and families.",
         "Beneficiaries change with the year: the Domestic Abuse Project, Sabathani Community Center and The Link in 2010; WE WIN Institute and The Sanneh Foundation in 2021; The Sanneh Foundation again in 2023; and Sabathani Community Center in 2024, with a teen-focused gift drive and live music from Dave Thompson & Friends, DJ Cousin Christopher and a surprise performance by Esera Tuaolo.",
@@ -302,6 +302,53 @@
     }
   },
   "events": [
+    {
+      "id": "holiday-gift-giving-party-2026",
+      "slug": "moodys-holiday-gift-giving-party-2026",
+      "title": "Moody's Holiday Gift Giving Party",
+      "start": "2026-12-14 19:00:00",
+      "end": "2026-12-14 23:00:00",
+      "venue": "Granada Theater",
+      "address": "3022 Hennepin Ave., Minneapolis, MN 55408",
+      "cost": "",
+      "ticketUrl": "",
+      "tagline": "Richard Moody's December tradition in Uptown. Bring an unwrapped gift, give back, celebrate the season.",
+      "categories": [
+        "Charity Event",
+        "IamMoody Event"
+      ],
+      "image": "/assets/img/holiday-party-past-01.jpg",
+      "body": [
+        "Richard Moody's annual holiday party returns to the Granada Theater in Uptown Minneapolis on Monday, December 14, from 7 to 11 p.m. Friends, neighbors, models, business partners and supporters come together for music, celebration and giving back.",
+        "Please bring a new, unwrapped gift. Teens are often forgotten in holiday drives, so gifts for teenagers are especially welcome. Cash donations are also accepted, and everything collected goes to Twin Cities kids, teens and families.",
+        "Parking: street parking and the Calhoun Square (7 Corners) ramp are suggested.",
+        "Photos on this page are from past holiday parties."
+      ],
+      "gallery": [
+        "/assets/img/holiday-party-past-01.jpg",
+        "/assets/img/holiday-party-past-02.jpg",
+        "/assets/img/holiday-party-past-03.jpg",
+        "/assets/img/holiday-party-past-04.jpg",
+        "/assets/img/holiday-party-past-05.jpg",
+        "/assets/img/holiday-party-past-06.jpg",
+        "/assets/img/holiday-party-past-07.jpg",
+        "/assets/img/holiday-party-past-08.jpg",
+        "/assets/img/holiday-party-past-09.jpg",
+        "/assets/img/holiday-party-past-10.jpg",
+        "/assets/img/holiday-party-past-11.jpg"
+      ],
+      "pressRelease": {
+        "release": "For immediate release",
+        "headline": "Richard Moody's Holiday Gift Giving Party Returns to the Granada Theater in Uptown Minneapolis",
+        "subhead": "The long-running December tradition collects gifts and donations for Twin Cities kids, teens and families on Monday, December 14, from 7 to 11 p.m.",
+        "body": [
+          "Richard Moody, founder of the Minneapolis event production company IAmMoody, hosts his annual Holiday Gift Giving Party on Monday, December 14, 2026, from 7 to 11 p.m. at the Granada Theater, 3022 Hennepin Ave. in Uptown Minneapolis. The evening brings together friends, neighbors, models, business partners and supporters to celebrate the season and give back.",
+          "Guests are asked to bring a new, unwrapped gift. Teens are often overlooked in holiday giving, so gifts for teenagers are especially welcome. Cash donations are also accepted.",
+          "For more than three decades, Moody's December party has turned a night out into a drive for children, teens and families in the Twin Cities. Past beneficiaries include Sabathani Community Center, The Sanneh Foundation, WE WIN Institute, the Domestic Abuse Project and The Link. In 2020, when gathering in person wasn't possible, the party became a drive-thru toy and food donation event so the giving could continue.",
+          "Street parking and the Calhoun Square (7 Corners) ramp are suggested."
+        ]
+      }
+    },
     {
       "id": "technicolor-truth-2026",
       "slug": "the-technicolor-truth-2026",
