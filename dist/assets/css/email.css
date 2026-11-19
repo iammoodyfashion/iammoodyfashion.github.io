@@ -1,0 +1,23 @@
+/* IAmMoody email invitation (lib/render.js emailPage). Styles the toolbar only: the email itself carries
+   inline styles, because email apps ignore stylesheets. */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: #f6f2ea; color: #0e0d0c; font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+.em-tools { max-width: 600px; margin: 0 auto; padding: 20px 16px 0; }
+.em-tools a { color: #0e0d0c; }
+.em-tools p { margin: 10px 0 0; font-size: 14px; color: #3a3631; }
+.em-tools p.muted { color: #6c665b; }
+
+.em-subject { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 16px 0 12px; padding: 10px 12px; background: #fff; border: 1px solid #d9d1c1; border-radius: 4px; }
+.em-subject span { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #6c665b; }
+.em-subject output { flex: 1 1 240px; font-weight: 600; }
+
+.em-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.em-tools button { font: 600 14px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #0e0d0c; background: #fff; border: 1px solid #0e0d0c; border-radius: 4px; padding: 9px 14px; cursor: pointer; }
+.em-tools button.primary { color: #fff; background: #a3172b; border-color: #a3172b; padding: 11px 18px; font-size: 15px; }
+.em-tools button:hover { background: #efe8da; }
+.em-tools button.primary:hover { background: #7f1120; }
+.em-tools button:focus-visible { outline: 3px solid #0e0d0c; outline-offset: 2px; }
+.em-subject button { padding: 6px 10px; font-size: 13px; }
+.em-status { font-size: 14px; color: #2f6b3a; font-weight: 600; }

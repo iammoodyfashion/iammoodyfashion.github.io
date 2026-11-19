@@ -337,6 +337,21 @@
         "/assets/img/holiday-party-past-10.jpg",
         "/assets/img/holiday-party-past-11.jpg"
       ],
+      "email": {
+        "subject": "You're invited: Moody's Holiday Gift Giving Party, Mon Dec 14 at the Granada",
+        "body": [
+          "Richard Moody's annual holiday party returns to the Granada Theater in Uptown Minneapolis on Monday, December 14, from 7 to 11 p.m. Come celebrate the season with friends, neighbors, models, business partners and supporters.",
+          "Please bring a new, unwrapped gift. Teens are often forgotten in holiday drives, so gifts for teenagers are especially welcome. Cash donations are also accepted, and everything collected goes to Twin Cities kids, teens and families.",
+          "Parking: street parking and the Calhoun Square (7 Corners) ramp are suggested."
+        ],
+        "photos": [
+          "/assets/img/holiday-party-past-02.jpg",
+          "/assets/img/holiday-party-past-03.jpg",
+          "/assets/img/holiday-party-past-04.jpg",
+          "/assets/img/holiday-party-past-08.jpg"
+        ],
+        "photosCaption": "From past holiday parties at the Granada."
+      },
       "pressRelease": {
         "release": "For immediate release",
         "headline": "Richard Moody's Holiday Gift Giving Party Returns to the Granada Theater in Uptown Minneapolis",

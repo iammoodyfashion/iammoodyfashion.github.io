@@ -63,6 +63,8 @@ Past items drop off at each build, and the page's script also hides anything who
 
 Every upcoming event also gets a **social card** at `/events/<slug>/card` (linked from the event page as "Social card"): a phone-sized poster to screenshot for an Instagram story or feed post. It uses the event's `image`, and the optional `tagline` as its one-line pitch. Styles are in `public/css/card.css`.
 
+Every upcoming event also gets an **email invitation** at `/events/<slug>/email` (linked from the event page as "Email invitation"): the event as an email with a suggested subject line. **Copy email** copies it for pasting into a new Gmail message (send to yourself, guests in Bcc); **Copy HTML** copies the code for Mailchimp's *Code your own → Paste in code*. Photos load from the live site, so publish before sending. Only photos under `/assets/` are used. Optional `email` on the event: `{ "subject", "body": [...] (replaces the event text), "photos": [up to 4, same shape so the grid lines up], "photosCaption" }`; the holiday party 2026 entry is an example. Code: `emailPage()` in `lib/render.js`, `public/js/email.js`, `public/css/email.css`.
+
 Any event with a `pressRelease` gets a **press release** at `/events/<slug>/press` (linked from the event page as "Press release", before and after the event): a printable US Letter page with a **Print or save as PDF** button. It combines the release text you write with the event's own details (date, time, venue, address, cost, link, and a link to the event page for photos), so those are never typed twice. The Technicolor Truth event in `data/curated.json` is a working example:
 
 ```json
